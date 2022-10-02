@@ -1,0 +1,335 @@
+.page-container{
+    display:grid;
+    grid-template-rows:
+    repeat(auto-fill, minmax(100px, 1fr));
+    /*70px 298px 345px 250px 331px 442px;*/
+    max-width:1200px;
+    margin:auto;
+    gap:1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .header{
+    width:100%;
+  }
+  nav{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 0;
+  }
+  nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:10px;
+  }
+  nav ul li a{
+    text-decoration:none;
+    color:black;
+  }
+  h1 > img{
+    height:60px;
+    padding-right:15px;
+  }
+  h1{
+    display:flex;
+    height:50px;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .sidebar{display:none;}
+  .openbtn{display: none;}
+
+  .about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 30px;
+    gap: 14px;
+    width: 1200px;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    text-align:center;
+    flex-wrap: wrap;
+  }
+  .rooms{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 30px;
+    gap: 30px;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    flex-wrap:wrap;
+    margin:0 auto;
+  }
+  .bedroom{
+    object-fit:contain;
+    height:180px;
+    width:300px;
+  }
+  .rooms > div{
+    width:300px;
+  }
+  .our-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 30px 60px;
+    gap: 14px;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    text-align:center;
+    flex-wrap: wrap;
+  }
+  .team-pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 30px 80px;
+    gap: 40px;
+    flex: none;
+    align-self: stretch;
+    flex-grow:0;
+    flex-wrap:wrap;
+    margin:0 auto;
+  }
+  .picture{
+    width:minmax(163px, 300px);
+    height:165px;
+
+  }
+  .arrow{
+    display:none;
+    align-items:center;
+    justify-content:center;
+  }
+  .arrow > button{
+    border:none;
+    background-color:white;
+    font-size:40px;
+  }
+  button > a{
+    text-decoration:none;
+    color:black;
+  }
+  .socials{
+    border-radius:50%;
+    height:20px;
+    width:20px;
+    gap:10px;
+  }
+  footer{
+    display:grid;
+    grid-template-rows:30px 1fr 40px;
+    gap:10px;
+    background-color:black;
+    color:white;
+  }
+  .f-header{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .f-socials{
+    height:30px;
+    background-color:white;
+    border-radius:50%;
+  }
+  .socials-container{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
+  }
+  .socials-container > a{
+    padding-left:10px;
+    color:white;
+    text-decoration:none;
+  }
+  .f-info{
+    display:grid;
+    grid-template-columns:
+      repeat(3, 1fr);
+    align-self:center;
+  }
+  .f-info > div{
+    text-align:center;
+  }
+  .company-email > a{
+    text-decoration:none;
+    color:white;
+  }
+  hr.rounded {
+    border-radius:5px;
+    width:90%;
+    height:1px;
+  }
+  .copyright{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  @media (max-width:768px){
+    #menu-list{
+        display:none;
+    }
+    .page-container{
+        width:768px;
+    }
+    .sidebar {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #ffffff;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: none;
+    display: block;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+    #main {
+    transition: margin-left .5s;
+    padding: 16px;
+   }
+   .header{
+       width: 85%;
+       margin: auto;
+}
+   .about-us{
+       width:85%;
+       margin:auto;
+   }
+   .rooms{
+       display:grid;
+       grid-template-rows:
+       repeat(3, 1fr);
+       grid-template-columns: 1fr;
+       justify-self: start;
+   }
+   .room1, .room2, .room3{
+       display: inline-flex;
+       justify-content: flex-start;
+   }
+   .bedroom{
+       width:200px;
+       height:140px;
+   }
+   .room1-text, .room2-text, .room3-text{
+       padding-left: 15px;
+   }
+   .rooms > div{width: fit-content;}
+   .arrow{
+       display: none;
+   }
+   .team-pics{
+       padding:10px 10px;
+       margin: 0 auto;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+   }
+   .picture{height: 230px;}
+  }
+  @media (max-width:480px) {
+    #menu-list{
+      display:none;
+    }
+  .page-container{width:375px;}
+  .header{
+    width: 375px;
+    margin: auto;
+    padding: 10px;
+}
+.about-us{
+    width:50%;
+    margin:0 auto;
+}
+.room1, .room2, .room3{
+    display:grid;
+    text-align: center;
+    justify-self: center;
+    margin:0 auto;
+}
+.bedroom{
+    width: 320px;
+    height:180px;
+    margin:0 auto;
+}
+.room1-text, .room2-text, .room3-text{
+    width:50%;
+    margin:0 auto;
+}
+.our-team{
+    width: 50%;
+    margin:0 auto;
+}
+.team-pics{
+    display: flex;
+    text-align: center;
+}
+footer{
+    width:375px;
+    grid-template-rows:1fr;
+}
+.f-header{
+    display: grid;
+    grid-template-rows:
+    repeat(4, 40px);
+    text-align: center;
+    justify-self: center;
+}
+.socials-container{
+    justify-content: start;
+}
+.f-info{
+    grid-template-columns: 1fr;
+}
+  }
